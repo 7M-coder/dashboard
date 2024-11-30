@@ -5,7 +5,7 @@ import { CircleStackIcon } from "@heroicons/react/24/outline";
 
 export default function Header() {
   return (
-    <header className="bg-slate-950 flex justify-center">
+    <header className="bg-slate-950 flex justify-center p-2 h-[500px] md:h-[250px] rounded-b-3xl">
       <div className="w-11/12">
         <div className="">
           <div className="flex justify-between">
