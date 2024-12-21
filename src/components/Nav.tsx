@@ -21,18 +21,24 @@ export default function Nav() {
         </div>
         <div>
           <ul className="flex gap-4">
-            <li className="text-white cursor-pointer">Dashboard</li>
-            <li className="text-white cursor-pointer">Statistics</li>
-            <li className="text-white cursor-pointer">Courses</li>
-            <li className="text-white cursor-pointer">Settings</li>
+            <li className="text-lime-500 cursor-pointer">Dashboard</li>
+            <li className="text-white cursor-pointer transition-all hover:text-lime-500">
+              Statistics
+            </li>
+            <li className="text-white cursor-pointer transition-all hover:text-lime-500">
+              Courses
+            </li>
+            <li className="text-white cursor-pointer transition-all hover:text-lime-500">
+              Settings
+            </li>
           </ul>
         </div>
         <div className="flex items-center gap-2">
-          <BellIcon className="size-9 text-white p-2 bg-sky-800 rounded-full" />
-          <MagnifyingGlassIcon className="size-9 text-white p-2 bg-sky-800 rounded-full" />
-          <div className="flex items-center justify-center px-1 gap-2 h-12 rounded-full bg-sky-800">
+          <BellIcon className="size-9 text-white p-2 bg-blue-800 rounded-full" />
+          <MagnifyingGlassIcon className="size-9 text-white p-2 bg-blue-800 rounded-full" />
+          <div className="flex items-center justify-center px-1 gap-2 h-12 rounded-full bg-blue-800">
             <img
-              src="https://ui-avatars.com/api/?background=0D8ABC&color=fff"
+              src="https://ui-avatars.com/api/?background=84cc16&color=1e40af"
               alt="avatar"
               className="rounded-full size-8"
             />

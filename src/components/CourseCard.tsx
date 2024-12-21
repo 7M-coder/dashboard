@@ -33,8 +33,11 @@ export default function CourseCard({
         </div>
       </div>
       {/* bottom */}
-      <div className="w-full bg-gray-400 rounded-full h-3 mt-4">
-        <div className={`bg-lime-500 h-3 rounded-full w-[${percentage}]`}></div>
+      <div className="w-full bg-slate-900 rounded-full h-3 mt-4">
+        <div
+          className={`bg-lime-500 h-3 rounded-full`}
+          style={{ width: `${percentage}%` }}
+        ></div>
       </div>
     </div>
   );

@@ -7,9 +7,11 @@ function App() {
 
   return (
     <>
-      <Nav />
-      <Header />
-      <Content />
+      <main className="bg-slate-100">
+        <Nav />
+        <Header />
+        <Content />
+      </main>
     </>
   );
 }

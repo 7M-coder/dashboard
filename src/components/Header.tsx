@@ -1,7 +1,8 @@
 import React from "react";
 import ActivityCart from "./ActivityChart";
 import CourseCard from "./CourseCard";
-import { CircleStackIcon } from "@heroicons/react/24/outline";
+import { CircleStackIcon } from "@heroicons/react/24/solid";
+import { CloudIcon, CommandLineIcon } from "@heroicons/react/16/solid";
 
 export default function Header() {
   return (
@@ -12,9 +13,6 @@ export default function Header() {
             <h1 className="text-white font-bold w-11/12 mt-4 text-lg">
               Your courses
             </h1>
-            <h1 className="text-white font-bold w-11/12 mt-4 text-lg">
-              Your activity
-            </h1>
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-2">
@@ -24,26 +22,24 @@ export default function Header() {
                 <CircleStackIcon className="size-4 rounded-full text-blue-800" />
               }
               heading="Data analysis"
-              list={["test 1", "test2"]}
-              percentage={85}
+              list={["3 Lesson left", "2 Projects left"]}
+              percentage={64}
             />
             <CourseCard
               background="bg-blue-800"
               icon={
-                <CircleStackIcon className="size-4 rounded-full text-blue-800" />
+                <CommandLineIcon className="size-4 rounded-full text-blue-800" />
               }
-              heading="Data analysis"
-              list={["test 1", "test2"]}
-              percentage={85}
+              heading="Machine learning"
+              list={["13 Lesson left", "3 Projects left"]}
+              percentage={32}
             />
             <CourseCard
               background="bg-blue-800"
-              icon={
-                <CircleStackIcon className="size-4 rounded-full text-blue-800" />
-              }
-              heading="Data analysis"
-              list={["test 1", "test2"]}
-              percentage={85}
+              icon={<CloudIcon className="size-4 rounded-full text-blue-800" />}
+              heading="Cloud computing"
+              list={["1 Lesson left", "1 Project left"]}
+              percentage={75}
             />
 
             <ActivityCart />
